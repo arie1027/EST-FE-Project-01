@@ -31,7 +31,7 @@
 html {
     font-size: 10px;
 }
-
+/* 타이틀 스크린 리더 속성 */
 .sr-only {
     position: absolute;
     width: 1px;
@@ -122,9 +122,14 @@ input[type="text"]::placeholder {
 
 input[type="text"] {
     text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
     width: 15.6rem;
     height: 3.7rem;
+    color: var(--placeholder-color);
+    font-family: 'GmarketSansMedium';
     border: none;
+    margin-inline: 0.4rem;
     border-radius: 0.7rem;
 }
 
@@ -163,7 +168,7 @@ input[type="text"] {
 }
 
 .btn-go, .btn-share {
-    margin-top: 6.4rem;
+    margin-top: 7.4rem;
     font-family: 'GmarketSansBold';
     color: var(--main-color);
     font-size: 1.4rem;
@@ -202,7 +207,7 @@ footer p {
     opacity: 70%;
 }
 
-/* dialog */
+/* dialog 추후 업데이트 */
 .dialog {
     margin-top: 3.2rem;
     margin-bottom: 3.2rem;
@@ -249,4 +254,148 @@ footer p {
     border-radius: 1.3rem;
     box-shadow: var(--button-shadow);
     padding: 2.3rem 4.9rem 2.1rem 4.9rem;
+}
+
+@media (min-width: 844px) {
+    header {
+        padding: 7.3rem 0;
+        margin-top: 12rem;
+        margin-bottom: 4.6rem;
+    }
+
+    header img.logo {
+        width: 56.4rem;
+        height: 11.2rem;
+    }
+
+    .title-content {
+        line-height: 3.96rem;
+        font-size: 3.6rem;
+    }
+
+    .quotes {
+        margin-top: 7.8rem;
+        margin-bottom: 10.2rem;
+        padding-inline-start: 10%;
+        padding-inline-end: 10%;
+        line-height: 2.8rem;
+        font-size: 1.8rem;
+        background-position: center;
+        padding-top: 10%;
+    }
+
+    .bold {
+        line-height: 2.8rem;
+        font-size: 2.4rem;
+    }
+
+    .going {
+        font-size: 2.4rem;
+        line-height: 8rem;
+    }
+
+    input[type="text"] {
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+        width: 22.8rem;
+        height: 5.7rem;
+        margin-inline: 1.7rem;
+    }
+
+    .mbr {
+        display: none;
+    }
+
+    .btn1 {
+        margin-top: 11.5rem;
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+        padding: 2.1rem 4.9rem;
+        border-radius: 5.6rem;
+    }
+
+    .click {
+        width: 6.4rem;
+        height: 7.2rem;
+        position: absolute;
+        margin-left: 0.5rem;
+        margin-top: 13rem;
+    }
+
+    .result {
+        margin-top: 14.7rem;
+        font-size: 2.4rem;
+        line-height: 8.9rem;
+    }
+    
+    .result span {
+        font-size: 7.2rem;
+        margin: 0 1.2rem;
+        vertical-align: middle;
+    }
+
+    .btn-go, .btn-share {
+        margin-top: 17.5rem;
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+    }
+    
+    .btn-go {
+        margin-right: 1.8rem;
+        padding: 2.1rem 4.9rem;
+    }
+    
+    .btn-share {
+        padding: 2.1rem 4.9rem;
+    }
+    
+    footer {
+        margin-top: 13rem;
+    }
+    
+    footer img {
+        width: 12.5rem;
+        height: 2.5rem;
+    }
+    
+    footer p {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        line-height: 1.738rem;
+    }
+    
+    /* dialog 추후 업데이트 */
+    .dialog {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        padding: 7.6rem 14.6rem 6.8rem;
+    }
+    
+    .dialog h1 {
+        font-size: 9.6rem;
+        line-height: 10.56rem;
+    }
+
+    .dialog h1:after {
+        content: "♥♥♥";
+    }
+    
+    .dialog h2 {
+        font-size: 3.6rem;
+        line-height: 3.96rem;
+    }
+    
+    .dialog img {
+        width: 43.3rem;
+        height: 33.7rem;
+        margin-top: 2.9rem;
+    }
+    
+    .dialog .btn-exit {
+        margin-top: 7.4rem;
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+        border-radius: 5.6rem;
+        padding: 2.3rem 4.9rem 2.1rem 4.9rem;
+    }
 }
